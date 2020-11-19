@@ -95,4 +95,5 @@ def action(action):
 if __name__ == '__main__':
     # app.run(host='192.168.1.10', debug=True)
     #app.run(debug=True, ssl_context=('cert.pem', 'key.pem'))
-    app.run(debug=True)
+    #app.run(debug=True)
+    app.run(host= '0.0.0.0')
