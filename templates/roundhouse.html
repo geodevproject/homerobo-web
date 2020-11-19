@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <h1 class="h3 mb-2 text-gray-800">The Roundhouse</h1>
+          <p class="mb-4">Welcome to the roundhouse. Here you can view and manage each of the engines in your inventory.</p>
+
+          <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary" style="display:inline-block">Engines Available</h6>
+
+              <a href="addtrain" class="btn btn-success btn-icon-split" style="float: right">
+                    <span class="icon text-white-50">
+                      <i class="fas fa-check"></i>
+                    </span>
+                    <span class="text">Add Train</span>
+              </a>
+
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Manage</th>
+                      <th>Train ID</th>
+                      <th>Make</th>
+                      <th>Model</th>
+                      <th>Type</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>Manage</th>
+                      <th>Train ID</th>
+                      <th>Make</th>
+                      <th>Model</th>
+                      <th>Type</th>
+                    </tr>
+                  </tfoot>
+
+                  <tbody>
+
+                  {% for train in trains %}
+                    <tr>
+                      <td>Edit</td>
+                      <td>{{ train.train_id }}</td>
+                      <td>{{ train.train_make }}</td>
+                      <td>{{ train.train_model }}</td>
+                      <td>{{ train.train_type }}</td>
+                    </tr>
+                  {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+
+    <!-- Outer Row -->
+    <div class="row justify-content-center">
+
+      <div class="col-xl-10 col-lg-12 col-md-9">
+
+        <div class="card o-hidden border-0 shadow-lg my-5">
+          <div class="card-body p-0">
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+          </div>
+
+
+        <!-- /.container-fluid -->
+</div>
+      <!-- End of Main Content -->
+
+{% endblock %}

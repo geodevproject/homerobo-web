@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <h4 class="mb-4 text-gray-800">Hello, I'm the Kinetic Electronic Living Emulator. You can call me <b>KEL-E</b>.</h4>
+
+          <div class="row">
+
+          </div>
+
+          <div class="row">
+
+            <!--<div class="col-lg-6">-->
+
+              <!-- Circle Buttons -->
+              <!--<div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">View</h6>
+                </div>
+                <div class="card-body">
+                  <div class="iframe-container" style="overflow: hidden; padding-top: 56.25%; position: relative;">
+                    <iframe allow="microphone; camera" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%;" src="https://zoom.us/join/" sandbox="allow-forms allow-scripts" frameborder="0"></iframe>
+                  </div>
+                </div>
+              </div>
+
+            </div>-->
+
+
+            <div class="col-lg-6">
+
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Drive Controls</h6>
+                </div>
+                <div class="card-body">
+                  <p>Click a button</p>
+
+                  <div id = "stage" style = "background-color:#cc0;">
+                  Output
+                  </div>
+
+                  <center>
+                    <div class="my-2">
+                    <button type="button" class="btn btn-light" id="up" onclick="alert('Hello world!')">
+                      <i class="far fa-arrow-alt-circle-up fa-3x"></i>
+                    </button>
+                  </div>
+                  <div class="my-2">
+                    <button type="button" class="btn btn-light">
+                      <i class="far fa-arrow-alt-circle-left fa-3x"></i>
+                    </button>
+                    
+                    <button type="button" class="btn btn-light">
+                      <i class="far fa-stop-circle fa-3x"></i>
+                    </button>
+                    <button type="button" class="btn btn-light">
+                      <i class="far fa-arrow-alt-circle-right fa-3x"></i>
+                    </button>
+                  </div>
+                  <div id="down" class="my-2">
+                    <button type="button" class="btn btn-light">
+                      <i class="far fa-arrow-alt-circle-down fa-3x"></i>
+                    </button>
+                  </div></center>
+
+                  <div class="my-2"></div>
+                  <span class="btn btn-icon-split"></span>
+                  <input type = "button" id = "start" value = "Camera Left" class="btn btn-success"/>
+                  </span>
+
+                  <div class="my-2"></div>
+                  <span class="btn btn-icon-split">
+                  <input type = "button" id = "medium" value = "Camera Right" class="btn btn-info"/>
+                  </span>
+
+                  <div class="my-2"></div>
+                  <span class="btn btn-icon-split">
+                  <input type = "button" id = "stop" value = " Camera Stop" class="btn btn-danger"/>
+                  </span>
+
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+{% endblock %}

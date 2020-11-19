@@ -1,0 +1,10 @@
+{
+  "train_profiles": [
+      {
+        "train_id": "0001",
+        "train_make": "Norfolk and Western",
+        "train_model": "J Class 611",
+        "train_type": "Steam"
+      }
+  ]
+}
