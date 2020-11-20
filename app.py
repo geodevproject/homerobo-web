@@ -78,7 +78,8 @@ def action(action):
     channel = "homerobo"
 
     #client = redis.Redis(host='54.227.58.150', port=6379, password='VozUvtV7V2TQ')
-    client = redis.Redis(host='54.197.76.217', port=6379)
+    client = redis.Redis(host='54.81.210.115', port=6379, password='VozUvtV7V2TQ')
+    #client = redis.Redis(host='54.197.76.217', port=6379)
     client.publish(channel, action)
 
     # Save the status message to be passed into the template:
