@@ -70,7 +70,7 @@ def send_page(path):
     return send_from_directory('static', path)
 
 
-@app.route("/api/engine/<action>")
+@app.route("/api/homerobo/<action>")
 def action(action):
     # speed = request.args['speed']
 
