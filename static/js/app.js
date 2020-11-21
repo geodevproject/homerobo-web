@@ -25,7 +25,7 @@
    });
 
    $("#stop").click(function(event){
-      $.getJSON('/api/homerobo/ ', function(jd) {
+      $.getJSON('/api/homerobo/stop', function(jd) {
          $('#stage').html('<p> Message: ' + jd.message + '</p>');
       });
    });
